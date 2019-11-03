@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap');
+
+html {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: map-get($map: $colors-neutral, $key: grayish-blue);
+}
+
+body {
+  text-align: center;
+}
+
+.section__hero-title,
+.section__title,
+.section__paragraph-title {
+  color: map-get($map: $colors-neutral, $key: dark-grayish-blue);
+  font-weight: 600;
+}
+
+.section__hero-title {
+  font-size: 1.75rem;
+}
+
+.section__paragraph-title {
+  font-size: 1.35rem;
+}
+
+.section__paragraph {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.footer__link {
+  color: map-get($map: $colors-neutral, $key: dark-grayish-blue);
+  text-decoration: none;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@include for-tablet-landscape-up {
+  .section__hero-title {
+    font-size: 3rem;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .section__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .section__paragraph-title {
+    font-size: 1.4rem;
+  }
+
+  .section__paragraph {
+    font-size: 1rem;
+  }
+}
