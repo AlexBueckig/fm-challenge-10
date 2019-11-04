@@ -45,11 +45,16 @@
     }
 
     &__list--social {
+      display: flex;
       flex-grow: 0;
     }
 
     &__list-item {
       margin: 0;
+    }
+
+    &__list-item--social {
+      margin-left: 1em;
     }
 
     &__link,
