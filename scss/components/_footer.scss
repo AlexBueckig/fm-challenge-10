@@ -35,7 +35,8 @@
 
     &__list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
       text-align: left;
       gap: 1em;
       margin: 0;
